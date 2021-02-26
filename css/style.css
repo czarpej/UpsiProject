@@ -1,0 +1,864 @@
+﻿body
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI";
+	color: #eaeaea;
+}
+
+.logon, .info
+{
+	margin-left: auto;
+	margin-right: auto;
+	/*height: 250px;*/
+	width: 400px;
+	background-color: #d1d1d1;
+	color: black;
+	font-size: 36px;
+	text-align: center;
+	padding: 15px;
+	-webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.3);
+	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.3);
+	border-radius: 5px 5px 5px 5px;
+	font-weight: 500;
+}
+
+.info
+{
+	height: 85px;
+	border-radius: 5px 5px 0px 0px;
+	font-weight: 700;
+	font-size: 35px;
+}
+
+.logon
+{
+	margin-top: 0;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.row
+{
+	background-color: #1b1919;
+	padding: 0;
+	-webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.3);
+	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.3);
+	border-radius: 0;
+	text-align: center;
+	font-family: "Segoe UI";
+}
+
+.row p
+{
+	margin-top: 10px;
+}
+
+fieldset .table tr:first-child > td
+{
+	border: 0;
+}
+
+.table-bordered tr > th, .table-bordered tr > td
+{
+	border: 1px solid white;
+}
+
+.table-bordered tr > th, .table-bordered tr > td, .table tr > th, .table tr > td
+{
+	vertical-align: middle;
+}
+
+.history input[type="button"]
+{
+	font-size: 16px;
+	width: 100%;
+	letter-spacing: 0;
+	margin-top: 6px;
+}
+
+section
+{
+	transition: opacity 0.3s linear;
+}
+
+section.index > div.container > div.row
+{
+	background-color: transparent;
+	box-shadow: 0 0 0 0;
+	-webkit-box-shadow: 0 0 0 0;
+}
+
+section.index > div.container > div.row > div.col-12
+{
+	padding: 0;
+	border: 0;
+	z-index: 1;
+}
+
+section.index > div.container > div.row > div.col-12 > div.logon input[type="text"], section.index > div.container > div.row > div.col-12 > div.logon input[type="password"]
+{
+	width: 230px;
+	height: 30px;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 4px;
+	outline: none;
+	background-color: #eaeaea;
+	color: black;
+}
+
+section.index > div.container > div.row > div.col-12 > div.logon input[type="text"]:focus, section.index > div.container > div.row > div.col-12 > div.logon input[type="password"]:focus
+{
+	border: 2px #971112 solid;
+	background-color: rgba(255,0,0,0.1);
+}
+
+section.index > div.container > div.row > div.col-12 > div.logon input[type="text"]:hover, section.index > div.container > div.row > div.col-12 > div.logon input[type="password"]:hover
+{
+	border: 2px #971112 solid;
+}
+
+.score
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 15px;
+	border-radius: 5px 5px 5px 5px;
+	font-weight: 500;
+}
+
+nav.navbar
+{
+	display: flex;
+	justify-content: flex-end;
+	z-index: 100;
+	width: 100%;
+	background-color: #1b1919;
+	padding: 0;
+	padding-right: 4%;
+	border-bottom: 1px solid #1c2d3a;
+}
+
+/*input submit look like link a*/
+nav.navbar input[type="submit"], nav.navbar>div>ol button, nav.navbar>ol button
+{
+	background:none!important;
+    color:inherit;
+    border:none;
+    padding:0!important;
+    font: inherit;
+    cursor: pointer;
+    width: 100%;
+    height: 32px;
+}
+
+.dropdown-item
+{
+	padding: 0;
+	height: 32px;
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+}
+
+li.dropdown
+{
+	cursor: pointer;
+}
+
+a.dropdown-toggle
+{
+	padding-top: 12px;
+	height: 100%;
+}
+
+div.container > div.row > div.col-12
+{
+	border: 1px solid #1c2d3a;
+	padding: 30px;
+	margin: 0;
+}
+
+div.container > div.row > div.col-12 fieldset
+{
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	border: 1px groove;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom: 15px;
+	padding: 15px 30px;
+}
+
+div.container > div.row > div.col-12 legend
+{
+	width: auto;
+	font-size: 20px;
+	text-align: left;
+}
+
+section.admin > div.container > div.row > div.col-12 fieldset
+{
+	width: 100%;
+}
+
+section.admin > div.container > div.row > div.col-12 input[type="button"], section.report > div.container > div.row > div.col-12 input[type="button"], section.show > div.container > div.row > div.col-12 input[type="button"], section.add > div.container > div.row > div.col-12 input[type="button"],  section.delete > div.container > div.row > div.col-12 input[type="button"], section.edit > div.container > div.row > div.col-12 input[type="button"], section.question_page > div.container > div.row > div.col-12 input[type="button"], section.your_files > div.container > div.row > div.col-12 input[type="button"], section.source_code > div.container > div.row > div.col-12 input[type="button"]
+{
+	margin-top: 5px;
+	max-width: 300px;
+}
+
+section.report > div.container > div.row > div.col-12
+{
+	font-size: 15px;
+}
+
+section.edit_test > div.container > div.row > div.col-12
+{
+	font-size: 15px;
+}
+
+section.show > div.container > div.row > div.col-12 input[type="text"], section.add > div.container > div.row > div.col-12 input[type="text"], section.question_page > div.container > div.row > div.col-12 input[type="text"]
+{
+	font-size: 14px;
+}
+
+section.add > div.container > div.row > div.col-12 input[type="number"]
+{
+	width: auto;
+}
+
+section.edit_user > div.container > div.row > div.col-12
+{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+section.edit_user > div.container > div.row > div.col-12 input[type="password"]
+{
+	font-size: 14px;
+}
+
+.image_info
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.image_info img
+{
+	width: 600px;
+	height: 400px;
+	max-width: 95%;
+	max-height: 40%;
+}
+
+.test_info
+{
+	background-color: #c1c1c1;
+	color: #212121;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+input[type="text"], input[type="number"], input[type="password"]
+{
+	outline: none;
+	/*border-radius: 4px;*/
+	text-align: center;
+}
+
+input[type="text"]:hover, input[type="number"]:hover, input[type="password"]:hover
+{
+	border: 2px #971112 solid;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus
+{
+	border: 2px #971112 solid;
+	background-color: rgba(255,0,0,0.1);
+	color: white;
+}
+
+input
+{
+	font-family: "Segoe UI";
+}
+
+input[type=number]
+{
+	width: 100%;
+	max-width: 250px;
+	text-align: center;
+	font-size: 14px;
+}
+
+select
+{
+	font-family: "Segoe UI";
+	font-size: 14px;
+	/*font-weight: 700;*/
+	-webkit-appearance: no-repeat;
+	-moz-appearance: no-repeat;
+	text-align-last: center;
+	-ms-text-align-last: center;
+	-moz-text-align-last: center;
+	appearance: no-repeat;
+	cursor: pointer;
+	padding: 1px;
+	/*background-color: #971112;
+	color: #d1d1d1;*/
+}
+
+select:focus, select:hover
+{
+	border: 1px #971112 solid;
+	outline: none;
+}
+
+input[type=radio]
+{
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+}
+
+.zaloguj
+{
+	width: 230px;
+	height: 40px;
+}
+
+.zaloguj, .editing
+{
+	text-align: center;
+	max-width: 500px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	font-size: 18px;
+	font-weight: 500;
+	background-color: #063250;
+	color: #d1d1d1;
+	transition: all 0.3s ease-in-out;
+	font-family: Segoe UI, sans-serif;
+}
+
+.zaloguj:hover, .editing:hover, .manual_find:hover
+{
+	background-color: #0d4e79;
+	color: #e2e2e2;
+}
+
+.editing
+{
+	width: 100%;
+	max-width: 240px;
+	font-size: 20px;
+	padding: 5px;
+	margin-top: 1px;
+	font-family: Segoe UI, sans-serif;
+}
+
+input[type=button].editing, button[type="button"].editing
+{
+	width: 100%;
+	max-width: 300px;
+	letter-spacing: 0;
+	font-size: 17px;
+	padding: 0;
+	font-weight: 400;
+	font-family: Segoe UI, sans-serif;
+	margin-top: 5px;
+	outline: none;
+}
+
+.editing_button
+{
+	margin-top: 5px;
+	max-width: 300px;
+	width: 100%;
+	letter-spacing: 0;
+	font-size: 17px;
+	padding: 0;
+	font-weight: 400;
+	font-family: Segoe UI, sans-serif;
+}
+
+
+.question, .answer, .check_answer, .info_test
+{
+	padding: 15px;
+	border: 1px solid #00000000;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	text-align: left;
+	transition: 0.3s all ease-in-out;
+	background-color: #4a4646;
+	width: 100%;
+	color: #eaeaea;
+}
+
+section.test > div.container > div.row > div.col-12 > div.question
+{
+	color: black;
+}
+
+section.test > div.container > div.row > div.col-12 label
+{
+	color: black;
+	width: 100%;
+	margin: 0;
+}
+
+.info_test
+{
+	background-color: #2f2b2b;
+}
+
+.answer, .check_answer, input[type=checkbox]
+{
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.answer:hover
+{
+	border: 1px solid #0a466f;
+}
+
+.answer:active
+{
+	background-color: #09283e;
+	color: #d1d1d1;
+}
+
+.check_answer
+{
+	background-color: #09283e;
+	color: #d1d1d1;
+}
+
+.check_answer:hover
+{
+	border: 1px solid #0a466f;
+}
+
+.progress_bar
+{
+	margin-top: 7px;
+	height: 25px;
+}
+
+.time_belt
+{
+	display: block;
+  	height: 75%;
+  	background-color: #0d4e79;
+  	position: relative;
+ 	overflow: hidden;
+ 	width: 100%;
+ 	border-radius: 25px;
+ 	transition: 0.3s all ease-in-out;
+}
+
+.footer
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1%;
+	width: 100vw;
+	min-height: 25px;
+	height: auto;
+	background-color: #d1d1d152;
+	color: #000000ab;
+	font-weight: bold;
+}
+
+.kryteria
+{
+	visibility: hidden;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 100;
+	width: 40%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: green;
+	transition: visibility 0.3s linear;
+}
+
+.kryteria p
+{
+	position: absolute;
+	bottom: 2%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.kryteria > div > .table
+{
+	background-color: green;
+}
+
+.one_option
+{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+}
+
+div.container > div.row > div.col-12 fieldset.one_option
+{
+	border: 0;
+}
+
+div.container > div.row > div.col-12 fieldset.one_option legend
+{
+	opacity: 0;
+}
+
+textarea
+{
+	width: 100%;
+	max-width: 300px;
+	font-size: 14px;
+	height: 90px;
+	/*border: 0;
+	outline: 0.5px solid;*/
+}
+
+.good_ans
+{
+	margin-left: 12px;
+}
+
+input[type="file"]
+{
+	font-size: 14px;
+}
+
+.info_to_save, .show_picture, .server_image
+{
+	opacity: 0;
+	width: 70%;
+	position: fixed;
+	left: 15%;
+	padding: 15px;
+	text-align: center;
+	background-color: #1b1919;
+	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.3);
+    font-family: "Segoe UI";
+    border: 1px solid #1c2d3a;
+    z-index: -1;
+    transition: opacity 0.3s linear;
+}
+
+.info_to_save { position: absolute; }
+
+.server_image
+{
+	opacity: 1;
+	position: static;
+	z-index: 1;
+	margin-bottom: 10px;
+	width: 30%;
+	margin-left: 3%;
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+    justify-content: center;
+}
+
+.image_question
+{
+	/*background-image: url("img/background.jpg");*/
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: opacity 0.3s ease-in-out;
+
+}
+
+.zoom
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 5px);
+	opacity: 0;
+	display: flex;
+	z-index: 2;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000ea;
+	font-size: 18px;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.zoom:hover
+{
+	opacity: 0.6;
+}
+
+.zoom>i
+{
+	font-size: 7vw;
+}
+
+.info_to_save img, .show_picture img, .server_image img, .question img
+{
+	width: 100%;
+	max-width: 85vw;
+	max-height: 85vh;
+}
+
+.server_image img 
+{ 
+	margin-bottom: 5px; 
+	cursor: pointer; 
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+nav.navbar > div.navbar-collapse > ol.navbar-nav > li.nav-item > div.dropdown-menu > a.dropdown-item > form
+{
+	display: flex;
+	justify-content: center;
+}
+
+.dropdown-menu
+{
+	background-color: #ffffffcc;
+}
+
+.feedback 
+{
+	max-width:none; 
+	width:80%; 
+	display:block;
+	overflow: hidden;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 0;
+	border-color: white;
+}
+
+div.forum, div.searched_question
+{
+	background-color: #4a4040;
+	border: 1px solid #1c2d3a;
+	padding: 5px 1%;
+}
+
+div.forum
+{
+	margin-top: 10px;
+}
+
+div.post, div.this_question, div.info_question
+{
+	display: flex;
+	flex-flow: row;
+}
+
+div.reviews, div.user_info, div.content_question, div.info_question, div.edit_question
+{
+	background-color: #2d2828;
+	border: 1px solid black;
+	text-align: left;
+	padding: 15px;
+	margin-bottom: 5px;
+}
+
+div.content_question, div.info_question
+{
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+
+div.edit_question
+{
+	margin-top: 0;
+	text-align: center;
+}
+
+div.user_info
+{
+	width: 25%;
+	word-wrap: break-word; /*zawijanie tekstu*/
+}
+
+div.reviews
+{
+	width: 75%;
+}
+
+div.reviews hr
+{
+	border-top: 1px solid #eaeaea;
+	margin-bottom: 2px;
+}
+
+div.info_time
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: 10px;
+}
+
+div.content_question, div.change_question
+{
+	width: calc(35% - 5px);
+	margin-left: 5px;
+}
+
+div.change_question
+{
+	border-left: 1px solid #eaeaea;
+	padding-left: 15px;
+}
+
+div.info_question, div.info_question_answer
+{
+	width: 65%;
+}
+
+.info_question_answers
+{
+	list-style-type: upper-latin;
+}
+
+@media(max-width: 575px)
+{
+	section>div.container>div.row>div.col-12
+	{
+		padding: 30px 5px;
+	}
+
+	div.post
+	{
+		flex-flow: column;
+	}
+
+	div.user_info, div.reviews
+	{
+		width: 100%;
+	}
+
+	div.user_info
+	{
+		margin-bottom: 0;	
+	}
+}
+
+@media(max-width: 767px)
+{
+	section>div.container>div.row>div.col-12
+	{
+		padding: 30px 5px;
+	}
+
+	/*admin: show question*/
+	div.info_question
+	{
+		flex-flow: column;
+	}
+
+	div.info_question_answer, div.change_question
+	{
+		width: 100%;
+	}
+
+	div.change_question
+	{
+		border-left: 0;
+		border-top: 1px solid #eaeaea;
+		padding-left: 0;
+		padding-top: 5px;
+		margin-top: 5px;
+	}
+	
+	div.show_picture
+	{
+		width: 100%;
+		left: 0;
+		padding: 15px 10px;
+	}
+
+	div.show_picture img
+	{
+		max-height: 70vh;
+		max-width: 90vw;
+	}
+}
+
+/*forum*/
+@media(max-width: 575px)
+{
+	div.post
+	{
+		flex-flow: column;
+	}
+
+	div.user_info, div.reviews
+	{
+		width: 100%;
+	}
+
+	div.user_info
+	{
+		margin-bottom: 0;	
+	}
+}
+
+
+.scrolltop
+{
+	width: 48px;
+	height: 48px;
+	text-decoration: none;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/up.png") no-repeat 0px 0px;
+	position: fixed;
+	border: 1px solid transparent;
+	border-radius: 50px;
+	right: 2%;
+	bottom: 2%;
+	display: none;
+	z-index: 3;
+}
+
+.scrolltop:hover
+{
+	border: 1px solid #0d4e79;
+}
+
+/*
+Project inspired by created Bogdan Pietrzak UPSI
+Project idea comes from Michał Peczkis
+Project created by Michał Czarnota
+*/
